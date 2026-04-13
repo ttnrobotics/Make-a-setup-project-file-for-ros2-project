@@ -43,7 +43,8 @@ set -e
 echo "========== ROS 2 Project Setup Start =========="
 
 # Workspace path
-WS=~/master_ros2_ws
+# WS=~/master_ros2_ws
+WS="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # ROS distro
 ROS_DISTRO_NAME=humble
